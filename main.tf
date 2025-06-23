@@ -210,7 +210,7 @@ resource "aws_instance" "app" {
   instance_type          = "t3.micro"
   subnet_id              = aws_subnet.private.id
   vpc_security_group_ids = [aws_security_group.app_sg.id]
-  key_name               = "aws-login"              # Same as your Bastion key
+  key_name               = "aws-login"             
 
   tags = {
     Name = "app-tier"
