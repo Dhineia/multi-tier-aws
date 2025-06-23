@@ -42,3 +42,4 @@ Replicated the entire architecture in `.tf` files for version control and automa
 terraform init
 terraform plan
 terraform apply
+terraform destroy
