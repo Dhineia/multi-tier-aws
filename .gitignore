@@ -1,0 +1,6 @@
+# Terraform system files
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.pem
+*.log
