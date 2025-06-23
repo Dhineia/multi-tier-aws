@@ -1,5 +1,3 @@
-# multi-tier-aws
-
 # 🏗️ Multi-Tier AWS Infrastructure with Terraform
 
 This project implements a secure and scalable three-tier architecture on AWS, built first through the AWS Console and then codified using Terraform. The architecture includes a public Bastion Host, a private app layer (EC2 with Nginx), and a database subnet (planned for RDS).
