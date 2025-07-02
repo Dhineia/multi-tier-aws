@@ -44,6 +44,8 @@ terraform plan
 terraform apply
 terraform destroy
 
+---
+
 ## How to add .pem to ssh
 scp -i aws-login.pem aws-login.pem ec2-user@54.145.230.13:~
 ssh -i aws-login.pem ec2-user@54.145.230.13
@@ -51,7 +53,6 @@ chmod 400 aws-login.pem
 ssh -i aws-login.pem ec2-user@<Private-EC2-IP>
 
 ---
-___
 
 ## 🛠️ How to Install Nginx
 sudo yum install nginx -y       # for Amazon Linux
@@ -63,7 +64,7 @@ sudo netstat -tuln | grep :80
 curl localhost
 
 ---
-___
+
 ## Explanation
 This project showcases a secure and scalable multi-tier infrastructure built on AWS using Terraform.
 While it's not a full-featured website with a frontend UI like React or Vue, the design follows a classic three-tier model:
