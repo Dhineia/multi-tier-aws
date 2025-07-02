@@ -49,6 +49,7 @@ scp -i aws-login.pem aws-login.pem ec2-user@54.145.230.13:~
 ssh -i aws-login.pem ec2-user@54.145.230.13
 chmod 400 aws-login.pem
 ssh -i aws-login.pem ec2-user@<Private-EC2-IP>
+
 ---
 
 ## 🛠️ How to Install Nginx
@@ -59,3 +60,14 @@ sudo systemctl enable nginx
 sudo systemctl status nginx
 sudo netstat -tuln | grep :80
 curl localhost
+
+---
+## Explanation
+This project showcases a secure and scalable multi-tier infrastructure built on AWS using Terraform.
+While it's not a full-featured website with a frontend UI like React or Vue, the design follows a classic three-tier model:
+- A public tier with a Bastion Host to manage secure access
+- An application tier with an EC2 instance running Nginx
+- A data tier, currently scaffolded for RDS integration
+I focused on network isolation, IAM roles, security groups, and NAT gateway configuration to simulate a real-world deployment environment.
+This demonstrates my strength in infrastructure design, cloud security best practices, and automation with Terraform, even without a client-facing frontend. It’s not just a website—it’s a cloud-native foundation that could scale or integrate with any full-stack app later.
+
