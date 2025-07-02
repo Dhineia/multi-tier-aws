@@ -43,3 +43,9 @@ terraform init
 terraform plan
 terraform apply
 terraform destroy
+
+## How to add .pem to ssh
+scp -i aws-login.pem aws-login.pem ec2-user@54.145.230.13:~
+ssh -i aws-login.pem ec2-user@54.145.230.13
+chmod 400 aws-login.pem
+ssh -i aws-login.pem ec2-user@<Private-EC2-IP>
