@@ -75,6 +75,7 @@ While it's not a full-featured website with a frontend UI like React or Vue, the
 I focused on network isolation, IAM roles, security groups, and NAT gateway configuration to simulate a real-world deployment environment.
 This demonstrates my strength in infrastructure design, cloud security best practices, and automation with Terraform, even without a client-facing frontend. It’s not just a website—it’s a cloud-native foundation that could scale or integrate with any full-stack app later.
 
-![image](https://github.com/user-attachments/assets/cf7743c0-a3b1-4def-b8b9-91356cf2dd93)
+![image](https://github.com/user-attachments/assets/29f79616-5025-4cf5-a426-310c0fbbba02)
+
 
 
