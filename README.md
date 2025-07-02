@@ -26,7 +26,7 @@ The architecture includes:
 
 ---
 
-📦 Project Phases
+## 📦 Project Phases
 ✅ Phase 1 – AWS Console Setup
 Manual build of networking, subnets, IGW/NAT, and EC2s to validate the infrastructure design.
 ✅ Phase 2 – Terraform Codification
@@ -35,24 +35,26 @@ Replicated the entire architecture in .tf files for version control and automati
 - SSH from local → Bastion (public IP)
 - SSH from Bastion → App EC2 (private IP)
 - Nginx installed and tested via curl
+  
+---
 
-🛠️ How to Deploy
+## 🛠️ How to Deploy
 terraform init
 terraform plan
 terraform apply
 terraform destroy
 
+---
 
-
-🔐 How to Add .pem to SSH
+## 🔐 How to Add .pem to SSH
 scp -i aws-login.pem aws-login.pem ec2-user@54.145.230.13:~
 ssh -i aws-login.pem ec2-user@54.145.230.13
 chmod 400 aws-login.pem
 ssh -i aws-login.pem ec2-user@<Private-EC2-IP>
 
+---
 
-
-🛠️ How to Install Nginx
+## 🛠️ How to Install Nginx
 sudo yum install nginx -y       # for Amazon Linux
 sudo systemctl start nginx
 sudo systemctl enable nginx
@@ -61,9 +63,9 @@ sudo systemctl status nginx
 sudo netstat -tuln | grep :80
 curl localhost
 
+---
 
-
-📘 Explanation
+## 📘 Explanation
 
 This project showcases a secure and scalable multi-tier infrastructure built on AWS using Terraform.
 While it's not a full-featured website with a frontend UI like React or Vue, the design follows a classic three-tier model:
