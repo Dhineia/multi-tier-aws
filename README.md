@@ -39,29 +39,29 @@ Replicated the entire architecture in .tf files for version control and automati
 ---
 
 ## 🛠️ How to Deploy
-terraform init
-terraform plan
-terraform apply
-terraform destroy
+- terraform init
+- terraform plan
+- terraform apply
+- terraform destroy
 
 ---
 
 ## 🔐 How to Add .pem to SSH
-scp -i aws-login.pem aws-login.pem ec2-user@54.145.230.13:~
-ssh -i aws-login.pem ec2-user@54.145.230.13
-chmod 400 aws-login.pem
-ssh -i aws-login.pem ec2-user@<Private-EC2-IP>
+- scp -i aws-login.pem aws-login.pem ec2-user@54.145.230.13:~
+- ssh -i aws-login.pem ec2-user@54.145.230.13
+- chmod 400 aws-login.pem
+- ssh -i aws-login.pem ec2-user@<Private-EC2-IP>
 
 ---
 
 ## 🛠️ How to Install Nginx
-sudo yum install nginx -y       # for Amazon Linux
-sudo systemctl start nginx
-sudo systemctl enable nginx
+- sudo yum install nginx -y       # for Amazon Linux
+- sudo systemctl start nginx
+- sudo systemctl enable nginx
 
-sudo systemctl status nginx
-sudo netstat -tuln | grep :80
-curl localhost
+- sudo systemctl status nginx
+- sudo netstat -tuln | grep :80
+- curl localhost
 
 ---
 
